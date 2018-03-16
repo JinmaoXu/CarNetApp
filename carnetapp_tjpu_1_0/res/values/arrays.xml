@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gas_type">
+        <item>90号汽油</item>
+        <item>93号汽油</item>
+        <item>97号汽油</item>
+        <item>0号柴油</item>
+    </string-array>
+    <string-array name="car_type">
+        <item>4门5座</item>
+        <item>2门2座</item>
+        <item>4门4座</item>
+        <item>6门7座</item>
+    </string-array>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F2F2F2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dayarticle_color"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/bbs_contentmenu_sub_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linearlayout_selector"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <com.tjpu.tools.CircleImageView
+                    android:id="@+id/bbs_contentmenu_sub_iv_logo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/carimg9"
+                    app:border_color="#F2F2F2"
+                    app:border_width="1dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/bbs_contentmenu_sub_tv_nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:text="君临落风"
+                        android:textColor="#575754"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/bbs_contentmenu_sub_tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:text="君临落风"
+                        android:textSize="20sp"
+                        android:textColor="#575754" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/bbs_contentmenu_sub_img"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/carimg10" />
+
+            <TextView
+                android:id="@+id/bbs_contentmenu_sub_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7月29日11点10分"
+                android:textColor="#575754"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bbs_contentmenu_sub_btn_collect"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_confirm_selector"
+                android:text="收藏"
+                android:textColor="#969696"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

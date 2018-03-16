@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/create_gasstation_address"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:text="加油站:园区加油站"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/create_gasstation_username"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:text="车主:徐晓"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="加油的车:"
+                    android:textColor="@color/white"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/create_gasstation_tv_selectcar"
+                    android:gravity="center"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="0dp"
+                    android:text="选择预约车辆"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_selector"
+                    android:textSize="15sp" />
+
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="加油类型:"
+                    android:textColor="@color/white"
+                    android:textSize="30dp" />
+
+                <Spinner
+                    android:id="@+id/create_gasstation_spgastype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:entries="@array/gas_type"
+                    android:textColor="@color/white"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="加油数量:"
+                    android:textColor="@color/white"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/create_gasstation_et_number"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:paddingBottom="0dp"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="升"
+                    android:textColor="@color/white"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="时间:"
+                    android:textColor="@color/white"
+                    android:textSize="24dp" />
+
+                <EditText
+                    android:id="@+id/create_gasstation_et_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:paddingBottom="0dp"
+                    android:text="5"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="月"
+                    android:textColor="@color/white"
+                    android:textSize="24dp" />
+
+                <EditText
+                    android:id="@+id/create_gasstation_et_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:paddingBottom="0dp"
+                    android:text="21"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="日"
+                    android:textColor="@color/white"
+                    android:textSize="24dp" />
+
+                <EditText
+                    android:id="@+id/create_gasstation_et_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:paddingBottom="0dp"
+                    android:text="5"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="时"
+                    android:textColor="@color/white"
+                    android:textSize="24dp" />
+
+                <EditText
+                    android:id="@+id/create_gasstation_et_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:paddingBottom="0dp"
+                    android:text="5"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="分"
+                    android:textColor="@color/white"
+                    android:textSize="24dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/create_gasstation_btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/button_selector"
+        android:text="提交预约订单"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>

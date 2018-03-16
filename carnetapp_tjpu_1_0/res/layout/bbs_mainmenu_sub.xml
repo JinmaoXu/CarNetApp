@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F2F2F2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dayarticle_color"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/bbs_mainmenu_sub_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/bbs_mainmenu_sub_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="宝马车友会"
+                android:textSize="18sp"
+                android:textColor="#575754"
+                 />
+<!-- android:textAppearance="?android:attr/textAppearanceLarge" -->
+            <ImageView
+                android:id="@+id/bbs_mainmenu_sub_img"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/carimg10" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击进入>"
+                android:textStyle="bold"
+                android:textColor="#575754"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bbs_mainmenu_sub_btn_attention"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_confirm_selector"
+                android:text="关注"
+                android:textColor="#969696"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

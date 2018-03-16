@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.baidu.mapapi.map.MapView  
+    android:id="@+id/baidumap_routeplan_mapview"  
+    android:layout_width="fill_parent"  
+    android:layout_height="0dp"
+    android:layout_weight="1"  
+    android:clickable="true" />
+	<Button 
+	    android:id="@+id/baidumap_routeplan_btn_gpsguide"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:textColor="#ffffff"
+	    android:text="开始导航"
+	    android:background="@drawable/btn_manimenu_selector"/>
+</LinearLayout>

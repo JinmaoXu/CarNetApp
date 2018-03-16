@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/order_menu_ll_sub"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dark_color_selector"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/order_menu_tv_ordertime"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="预约时间:" />
+
+        <TextView
+            android:id="@+id/order_menu_tv_gasstation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="加油站:" />
+
+        <TextView
+            android:id="@+id/order_menu_tv_gastype"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="汽油类型:" />
+
+        <TextView
+            android:id="@+id/order_menu_tv_gasnumber"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="加油数量:" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="查看二维码>"
+            android:textStyle="bold" />
+    </LinearLayout>
+ <LinearLayout
+        android:id="@+id/order_menu_ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dayarticle_color"
+        android:orientation="horizontal" >
+    <Button
+        android:id="@+id/mycar_menu_sub_finishorder"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_confirm_selector"
+        android:layout_marginRight="10dp"
+        android:text="完成订单" />
+     <Button
+        android:id="@+id/mycar_menu_sub_gotostation"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:text="前往加油站"
+        android:background="@drawable/button_confirm_selector"
+         />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bar" >
+
+        <TextView
+            android:id="@+id/bbs_contentmenu_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="宝马车友会"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+   <com.tjpu.bbs.ReFlashListView
+        android:layout_marginTop="20dp"
+        android:id="@+id/bbs_contentmenu_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1"
+        android:divider="#F2F2F2"
+        android:dividerHeight="20dp">
+    </com.tjpu.bbs.ReFlashListView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bbs_contentmenu_btn_sendarticle"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_confirm_selector"
+        android:text="发帖"
+        android:textColor="#969696"
+        android:textSize="20sp" />
+    
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/title_bar" >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="i车生活"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relative_select_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF" >
+
+            <ImageView
+                android:id="@+id/map_myset_address_change_ivbeginend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/change" />
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/map_myset_address_tvstart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/start_point"
+                    android:drawablePadding="5dp"
+                    android:padding="10dp"
+                    android:text="输入起点"
+                    android:textColor="#ccc"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="#22000000" />
+
+                <TextView
+                    android:id="@+id/map_myset_address_tvend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/end_point"
+                    android:drawablePadding="5dp"
+                    android:padding="10dp"
+                    android:text="输入终点"
+                    android:textColor="#ccc"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="#22000000" />
+            </LinearLayout>
+
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/map_myset_address_btnbegingps"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_confirm_selector"
+        android:textStyle="bold"
+        android:text="开启路线规划" />
+
+</LinearLayout>

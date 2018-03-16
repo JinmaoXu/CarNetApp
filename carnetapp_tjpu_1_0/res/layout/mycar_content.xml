@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_bar" >
+
+            <TextView
+                android:id="@+id/bbs_contentmenu_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="绑定的汽车信息"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mycar_content_ll_sub"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/dayarticle_color"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/mycar_content_tv_username"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="车主" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/mycar_content_tv_brand"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="品牌" />
+
+            <ImageView
+                android:id="@+id/mycar_content_iv_logo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+		<TextView
+            android:id="@+id/mycar_content_tv_type"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="型号:" />
+        <TextView
+            android:id="@+id/mycar_content_tv_carnumber"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="车牌号码:" />
+
+        <TextView
+            android:id="@+id/mycar_content_tv_engineernum"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="发动机号" />
+	<TextView
+            android:id="@+id/mycar_content_tv_carjibie"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="车身级别" />
+        <TextView
+            android:id="@+id/mycar_content_tv_driverlength"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="行驶里程" />
+
+        <TextView
+            android:id="@+id/mycar_content_tv_gasnumber"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="剩余汽油:" />
+
+        <TextView
+            android:id="@+id/mycar_content_tv_engineerstate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="发动机性能:" />
+
+        <TextView
+            android:id="@+id/mycar_content_tv_transmissionstate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="变速器性能:" />
+
+        <TextView
+            android:id="@+id/mycar_content_tv_lightsstate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="车灯性能:" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mycar_content_btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_selector"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        android:text="解除绑定这辆车"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/mycar_content_btn_change"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_confirm_selector"
+        android:text="维护"
+        android:textColor="#969696"
+        android:textSize="20sp" />
+
+</RelativeLayout>

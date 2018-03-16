@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tjpu.carnetapp"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- unavailable in API 23 -->
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="DMvTLZD0IRH47F2f7VhoW5W8nSfsgpMh" />
+
+        <activity
+            android:name="com.tjpu.carnetapp.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.tjpu.baidumap.map_baisc"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.baidumap.map_routeplan"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.baidumap.testgpsguide"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.baidumap.PathGuideActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.mainmenu.Mainmenu_news_fr"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.mainmenu.News_Content"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.zxing.activity.CaptureActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.login.Register"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.login.Login"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.ordernumber.Order_Menu"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.ordernumber.Create_Gasstation_Orders"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.mycar.Create_Mycar"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.music.Music_Main"
+            android:label="@string/app_name" >
+        </activity>
+
+        <service android:name="com.tjpu.music.Music_Player_Service" >
+        </service>
+        <service android:name="com.tjpu.music.MediaService" >
+        </service>
+
+        <activity
+            android:name="com.tjpu.mycar.Mycar_Menu_fr"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.mycar.Mycar_Content"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.ordernumber.Order_Menu_Fr"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.ordernumber.Order_ShowQRCode"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.mainmenu.Main_Menu"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.mainmenu.Main_Menu_ManagerControl"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.text.text"
+            android:label="111" >
+        </activity>
+        <activity
+            android:name="com.tjpu.tools.about"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.tools.User_Advice"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.myset.Show_QRCode_info"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.baidumap.SelectAddressActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.baidumap.map_myset_address"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.tools.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tjpu.sortlistview.Music_sort_test"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.login.UserInfo_Register"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.cityselect.CitySelect1Activity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.login.Register_UsingPhone"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.bbs.BBS_MainMenu"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.bbs.BBS_ContentMenu"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.bbs.BBS_Sendarticle"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.bbs.BBS_Content"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.bbs.BBS_Myattion"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.login.User_info"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.bbs.BBS_Mycollect"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.bbs.BBS_MyArticle"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.mycar.Check_Fine"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.tjpu.mycar.Mycar_Change"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>

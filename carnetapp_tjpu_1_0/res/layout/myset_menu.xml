@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/mainmenu_myset_myset_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/word_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:text="尚未登陆~，请先登录"
+            android:textColor="#F90606"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/mainmenu_myset_btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_confirm_selector"
+            android:text="前往登录" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- 个人信息 -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="50dp"
+                android:background="#BBBBAF" />
+
+            <LinearLayout
+                android:id="@+id/mainmenu_myset_ll_info"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/linearlayout_selector"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/mainmenu_myset_iv_logo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/myset_button_background"
+                    android:src="@drawable/carimg1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/mainmenu_myset_tv_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxEms="10"
+                        android:singleLine="true"
+                        android:text="君临落风"
+                        android:textColor="#575754"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/mainmenu_myset_tv_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:text="一直都很"
+                        android:textColor="#BBBCB4"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_up" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BBBBAF" />
+            <!-- 车友论坛 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_bar_play_normal" />
+
+                <TextView
+                    android:id="@+id/mainmenu_myset_tv_bbs"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/linearlayout_selector"
+                    android:clickable="true"
+                    android:gravity="center|left"
+                    android:text="车友论坛"
+                    android:textColor="#575754"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_up" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BBBBAF" />
+
+            <!-- 导航服务 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_bar_play_normal" />
+
+                <TextView
+                    android:id="@+id/mainmenu_myset_tv_gps"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/linearlayout_selector"
+                    android:clickable="true"
+                    android:gravity="center|left"
+                    android:text="导航服务"
+                    android:textColor="#575754"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_up" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BBBBAF" />
+            <!-- 关于我们 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_bar_play_normal" />
+
+                <TextView
+                    android:id="@+id/mainmenu_myset_tv_aboutus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/linearlayout_selector"
+                    android:clickable="true"
+                    android:gravity="center|left"
+                    android:text="关于我们"
+                    android:textColor="#575754"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_up" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BBBBAF" />
+            <!-- 意见反馈 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_bar_play_normal" />
+
+                <TextView
+                    android:id="@+id/mainmenu_myset_tv_advice"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/linearlayout_selector"
+                    android:clickable="true"
+                    android:gravity="center|left"
+                    android:text="意见反馈"
+                    android:textColor="#575754"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_up" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BBBBAF" />
+            <!-- 检查更新 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_bar_play_normal" />
+
+                <TextView
+                    android:id="@+id/mainmenu_myset_tv_check_newvision"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/linearlayout_selector"
+                    android:clickable="true"
+                    android:gravity="center|left"
+                    android:text="检查更新"
+                    android:textColor="#575754"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_up" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BBBBAF" />
+            <!-- 退出登录 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_bar_play_normal" />
+
+                <TextView
+                    android:id="@+id/mainmenu_myset_tv_exit_login"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/linearlayout_selector"
+                    android:clickable="true"
+                    android:gravity="center|left"
+                    android:text="退出登录"
+                    android:textColor="#575754"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_up" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BBBBAF" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

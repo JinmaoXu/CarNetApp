@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mainmenu_text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+         />
+    <Button
+        android:text="扫描二维码"
+        android:id="@+id/mainmenu_btn_begin_qdcode"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:onClick="click">
+        
+    </Button>
+ <ImageView 
+     android:id="@+id/mainmenu_iv"
+     android:layout_width="match_parent"
+     android:layout_height="50dp"/>
+ <TextView 
+     android:id="@+id/mainmenu_showinfo"
+     android:layout_width="match_parent"
+     android:layout_height="60dp"/>
+ <Button 
+     android:text="解析二维码"
+     android:layout_width="match_parent"
+     android:layout_height="60dp"
+     android:onClick="click_showinfo"/>
+</LinearLayout>

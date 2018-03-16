@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <Button 
+        android:id="@+id/order_number_btn_create"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="创建新的订单"/>
+     <Button 
+        android:id="@+id/order_number_btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="登录"
+        android:onClick="login"/>
+     
+	<Button 
+        android:id="@+id/order_number_btn_car"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="绑定我的车"
+        android:onClick="create_car"/>
+	<Button 
+        android:id="@+id/order_number_btn_music"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="音乐播放器"
+        android:onClick="listen_music"/>
+	<Button 
+	    android:id="@+id/order_number_btn_mycar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="已绑定的车"
+        android:onClick="my_car"/>
+	<Button 
+	    android:id="@+id/order_number_btn_myorder"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="创建订单"
+        android:onClick="show_qrcode"/>
+	<Button 
+	    android:id="@+id/order_number_btn_mainmenu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="主页"
+        android:onClick="show_mainmenu"/>
+	
+	
+</LinearLayout>

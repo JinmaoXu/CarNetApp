@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/mainmenu_myset_myset_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/word_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:text="尚未登陆~，请先登录"
+            android:textColor="#F90606"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/mainmenu_myset_btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_confirm_selector"
+            android:text="前往登录" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mycar_menu_llnocar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/word_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:text="当前尚未绑定汽车，请前往绑定"
+            android:textColor="#F90606"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/mycar_menu_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+    <Button
+        android:id="@+id/mycar_menu_createmycar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_manimenu_selector"
+        android:text="前往绑定汽车"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

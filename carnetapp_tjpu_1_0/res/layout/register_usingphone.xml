@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bar" >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="手机号快速注册"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <!-- 头部信息 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/register_usingphone_et_phonenumber"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="请输入手机号码"
+            android:inputType="number"
+            android:textColor="#969696"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/register_usingphone_btn_sendmessage"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="发送验证码"
+            android:background="@null"
+            android:textColor="#363B3E"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#22000000" />
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/register_usingphone_et_checknumber"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="请输入验证码"
+            android:textColor="#969696"
+            android:textSize="20sp" />
+
+       
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#22000000" />
+    <EditText
+            android:id="@+id/register_usingphone_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:textColor="#969696"
+            android:textSize="20sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#22000000"/>
+     <EditText
+            android:id="@+id/register_usingphone_et_passwordagain"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="请确认密码"
+            android:inputType="textPassword"
+            android:textColor="#969696"
+            android:textSize="20sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#22000000"/>
+	<Button 
+	    android:id="@+id/register_usingphone_btn_register"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:layout_marginTop="30dp"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp"
+	    android:background="@drawable/title_bar"
+	    android:text="注册"
+	    android:textSize="25dp"
+	    android:textColor="#969696"
+	    android:gravity="center"/>
+</LinearLayout>
